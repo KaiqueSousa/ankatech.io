@@ -1,0 +1,29 @@
+body{
+     background-image: url(imagens/plano.jpg);
+    color: white;	
+}
+h1{
+	font-size: 80px;
+	color:yellow;
+}
+#tabela{
+	font-size:30px;
+	color:lightblue;
+	border:2px solid;
+	border-radius: 4px;
+	border-color:white;
+	width:50%;
+}
+.notas{
+	height:50px;
+	font-size:20px;
+	
+	
+}
+
+#notas{
+	height:50px;
+	font-size:20px;
+	
+	
+}
