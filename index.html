@@ -3,19 +3,29 @@
 <head>
 		<title>Cálculo de média</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link href="estilo.css" rel="stylesheet"/> 
 </head>
 <body>
-		<form name="form">
-			Digite a primeira nota: <input name="nota1"><br>
-			Digite a segunada nota: <input name="nota2"><br>
-			Digite a terceira nota: <input name="nota3"><br>
-			<input type="button" onclick="media()" value="Calculando a média">
-		</form>
-		<script type="text/javascript">
-					function media(){
-							var nota1 = parseFloat(form.nota1.value.replace(',','.'));
-							var nota2 = parseFloat(form.nota2.value.replace(',','.'));
-							var nota3 = parseFloat(form.nota3.value.replace(',','.'));
+<center>
+	<h1>Calcule a sua média</h1>
+</center>
+	
+	
+<center>
+		<div id="tabela">
+		
+			Digite a primeira nota: <input class="notas" type="text" id="nota1"/><br/><br/>
+			Digite a segunda nota:  <input class="notas" type="text" id="nota2"/><br/><br/>
+			Digite a terceira nota: <input class="notas" type="text" id="nota3"/><br/><br/>
+			<input id="notas" type="button" onclick="media(nota1,nota2,nota3)" value="Calculando a média"/>
+		
+		</div>
+		
+<script type="text/javascript">
+					function media(nota1,nota2,nota3){
+							var nota1 = parseFloat(nota1.value.replace(',','.'));
+							var nota2 = parseFloat(nota2.value.replace(',','.'));
+							var nota3 = parseFloat(nota3.value.replace(',','.'));
 							
 							var media = (nota1+nota2+nota3)/3;
 							if(media<4){
@@ -27,6 +37,10 @@
 									alert("Aluno aprovado média: "+media);
 							}
 					}	
-		</script>
+		</script>		
+		
+		
+</center>
+
 </body>
 </html>
