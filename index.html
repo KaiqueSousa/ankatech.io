@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html>
-<head>
-		<title>Cálculo de média</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<link href="estilo.css" rel="stylesheet"/> 
-</head>
-<body>
-<center>
-	<h1>Calcule a sua média</h1>
-</center>
-	
-	
-<center>
-		<div id="tabela">
-		
-			Digite a primeira nota: <input class="notas" type="text" id="nota1"/><br/><br/>
-			Digite a segunda nota:  <input class="notas" type="text" id="nota2"/><br/><br/>
-			Digite a terceira nota: <input class="notas" type="text" id="nota3"/><br/><br/>
-			<input id="notas" type="button" onclick="media(nota1,nota2,nota3)" value="Calculando a média"/>
-		
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AnKaTech </title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+  <body>
+	<div class="titulo">
+		<header class="banne">
+			<div class="jumbotron">
+			<center>
+				<h1>Gerência de Configuração e Mudanças</h1>
+			</center>
+			</div>
+		</header>
+	</div>
+  
+	<hr>
+	<ul class="nav nav-tabs nav-justified">
+	  <li  class="active"><a href="index.html">Início</a></li>
+	  <li><a href="paginas/sobre.html">Sobre</a></li>
+	  <li><a href="paginas/contato.html">Contato</a></li>
+	  <li><a href="paginas/videoaulas.html">Video Aulas</a></li>
+	 </ul>
+	<div class="tudo">
+		<nav class="busca">
+			<form class="form-search">
+				  <input type="text" class="input-medium search-query">
+				  <button type="submit" class="btn">Busca</button>
+			</form>
+			<hr>
+			<ul class="nav nav-list">
+			  <li class="nav-header"><center><h3 class="menulateral">Conteúdo</h3></center></li>
+			  <li><a href="paginas/integraçãocontinua.html">Integração Continua</a></li>
+			  <li><a href="paginas/condemudanças.html">Controle de Mudanças</a></li>
+			  <li><a href="paginas/condeversão.html">Controle de Versões</a></li>
+			</ul>
+			<hr>
+		</nav>
+		<div class="conteudo">
+			<hr>
+			<h6 class="data">Aqui coloca a data!</h6>
+			<hr>
+			<p class="postagem">Conteudo aqui!!!</p>
+			<hr> 
+			<h6 class="data">Aqui coloca por quem foi postado!</h6>
+			<hr>
 		</div>
 		
-<script type="text/javascript">
-					function media(nota1,nota2,nota3){
-							var nota1 = parseFloat(nota1.value.replace(',','.'));
-							var nota2 = parseFloat(nota2.value.replace(',','.'));
-							var nota3 = parseFloat(nota3.value.replace(',','.'));
-							
-							var media = (nota1+nota2+nota3)/3;
-							if(media<4){
-								alert("Aluno reprovado, média: "+media);
-							}else if(media>=4 && media<7){
-									var falta = (50-6*media)/4;
-									alert("Aluno em prova final, média: "+media+"\n Nota necessária na final: "+falta);
-							}else{
-									alert("Aluno aprovado média: "+media);
-							}
-					}	
-		</script>		
-		
-		
-</center>
+	</div>
 
-</body>
+	
+	
+	<footer>
+		<center>
+		<div class="pagination pagination-centered">
+		    <li class="disabled"><a href="#">Prev</a></li>
+			<li class="active"><a href="index.html">1</a></li>
+			<li><a href="paginas/integraçãocontinua.html">2</a></li>
+			<li><a href="paginas/condemudanças.html">3</a></li>
+			<li><a href="paginas/condeversão.html">4</a></li>
+			<li class="disabled"><a href="#">Next</a></li>
+<		</div>
+		</center>
+	</footer>
+	<hr>
+    <footer >
+	<div class="panel panel-default">
+	  <div class="panel-footer"><center><h6>Copyright © 2016-Desenvolvido por ANKA.Tech</h6></center></div>
+	</div>
+			
+			
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
