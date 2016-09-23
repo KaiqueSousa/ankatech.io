@@ -1,0 +1,173 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 300px;
+    background: url(../img/imagem2.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.logomarca{
+    background:rgba(17,123,230,0.0);
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid rgba(255,0,0,0.0);
+	
+}
+.logomarca h1{
+    text-shadow: 0 0 0.2em midnighblue, 0 0 0.2em midnighblue, 0 0 0.2em midnighblue;
+    font-size: 5em;
+    text-align: center;
+	color: #CFCFCF;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: #696969;
+}
+    #menu ul {
+    	padding:0%;
+    	margin:0%;
+    	background-color:#696969;
+    	list-style:none;
+		float:left;
+		width:100%;
+    }
+	#menu ul li { display: inline; }
+	#menu ul li a {
+	padding: 1% 2%;
+	display: inline-block;
+	background-color:#000080;
+	color: #838B8B;
+	text-decoration: none;
+	
+	}
+	    #menu ul li a:hover {
+    	background-color:#D6D6D6;
+    	color: #6D6D6D;
+    	border-bottom:3px solid #EA0000;
+    }
+	
+section{
+    width: 100%;
+    background: url(../img/q.jpg) no-repeat;
+	
+}
+article{
+    width: 20%;
+    margin: 2.5%;
+    float: left;
+    background-color: rgb(2,2,2);
+    overflow: hidden;
+	height: 265px;
+    
+	}
+
+	article p{
+	color:white;
+	text-shadow: 0 0 0.4em blue, 0 0 0.4em blue, 0 0 0.4em blue;
+	}
+	
+	
+	article img{
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+article img:hover{
+    transform: scale(1.1,1.1);
+    opacity: 1;
+    transition: 1s;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background:#000080 ;
+	background-size: 100% 100%;
+	color: #838B8B;
+}
+.clearfix{
+    *zoom: 1
+}
+.clearfix h1{
+     color: red;
+	 text-align: center;
+	 text-shadow: 0 0 0.4em blue, 0 0 0.4em blue, 0 0 0.4em blue;
+}
+.clearfix p{
+   color:red;
+   text-shadow: 0 0 0.4em blue, 0 0 0.4em blue, 0 0 0.4em blue;
+}
+.clearfix:after, .clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+    #centro {
+    position:relative;
+    left:25%;
+	width: 50%;
+    }
+@media(max-width: 800px) {
+    .logomarca{
+        width: 100%;
+        background: 2px solid rgba(255,0,0,0.0);
+        border: 2px solid rgba(255, 0, 0, 0.0);
+    }
+    .logomarca h1{
+        text-shadow: 0 0 0.2em blue, 0 0 0.2em blue, 0 0 0.2em blue;
+        font-size: 4em;
+        text-align: center
+    }
+    article{
+        width: 45%;
+        margin: 2.5%;
+        float: left;
+        background: #c2def5;
+		background-color: rgb(2,2,2);
+		height: 265px;
+    }
+	#centro {
+    position:relative;
+    left:25%;
+
+    }
+}
+@media(max-width: 600px){
+    footer{
+       background: url(../img/.png) no-repeat;
+       background-size: 100% 100%;
+    }
+    nav{
+        background: #696969;
+		
+    }
+    article{
+        width:95%;
+        margin: 2.5%;
+    }
+	#centro {
+    position:relative;
+    left:25%;
+	
+    }
+	section{
+    background-size: 100% 100%;
+	}
+}
+img:hover {
+-moz-transform: scale(2);
+-webkit-transform: scale(2);
+-o-transform: scale(2);
+-moz-transition: 1s all ease;
+
+
+
+
+
+
