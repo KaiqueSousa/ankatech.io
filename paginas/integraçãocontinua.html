@@ -21,8 +21,9 @@
 	
 	<ul class="nav nav-tabs nav-justified">
 	 <li><a href="../index.html">Início</a></li>
-	  <li><a href="sobre.html">Sobre</a></li>
-	  <li><a href="videoaulas.html">Video Aulas</a></li>
+	 <li><a href="videos.html">Videos</a></li>
+	 <li><a href="sobre.html">Sobre</a></li>
+	  
 	 </ul>
 	<div class="tudo">
 		<nav class="busca">
@@ -34,62 +35,60 @@
 			<ul class="nav nav-list">
 			  <li class="nav-header"><center><h3 class="menulateral">Conteúdo</h3></center></li>
 			  <li><a href="integraçãocontinua.html">Integração Continua</a></li>
-			  <li class="active"><a href="condemudanças.html">Controle de Mudanças</a></li>
+			  <li class="active"><a href="gerendemudanças.html">Gerenciamento de Mudanças</a></li>
 			  <li><a href="condeversão.html">Controle de Versões</a></li>
 			</ul>
 			<hr>
 		</nav>
 		<div class="conteudo">
-			<h2 class="postagem">Integração Contínua</h2>
 			<hr>
 			<h6 class="data">23 de Setembro de 2016</h6>
 			<hr>
-			<h3 class="postagem">Introdução</h3>
-			<h4 class="postagem"><p>Na integração continua, um procedimento de desenvolvimento de 
+			<center>
+				<h2 class="postagem">Integração Contínua</h2>
+			</center>
+			<p class="postagem">Na integração continua, um procedimento de desenvolvimento de 
 			software pode ser reutilizado e aprimorado. Sendo que este é um dos pilares fundamentais
 			do XP(Extreme Programming), no qual é um processo simples e eficiente baseado no contato 
 			direto com o cliente. O objetivo é minimizar os riscos, que o projeto pode sofrer ao longo
 			do seu desenvolvimento, tornando-o assim com uma melhor qualidade quando finalizado.</p> 
-			<p><i>"Integração Contínua é uma pratica de desenvolvimento de software onde os membros de um time integram
+			<p class="postagem"><i>"Integração Contínua é uma pratica de desenvolvimento de software onde os membros de um time integram
 			seu trabalho frequentemente, geralmente cada pessoa integra pelo menos diariamente – podendo haver múltiplas
 			integrações por dia. Cada integração é verificada por um build automatizado (incluindo testes) para detectar
 			erros de integração o mais rápido possível. Muitos times acham que essa abordagem leva a uma significante redução
 			nos problemas de integração e permite que um time desenvolva software coeso mais rapidamente."
 																							Martin Fowler</i></p>
-			</h4>
 			<center>
-			<img src="visaogeral.png" width="600px" height="400px">
+			<img src="../img/visaogeral.png" width="600px" height="400px">
 			</center>
 			<h3 class="postagem">Caracteristicas de Intregração Contínua</h3>
-			<h4 class="postagem">
-			<p><b>Independência:</b> As tarefas de integração são executadas sem terem que concorrer com outros aplicativos que
+			<p class="postagem"><b>Independência:</b> As tarefas de integração são executadas sem terem que concorrer com outros aplicativos que
 			normalmente estão rodando num computador de desenvolvimento.</p>
-			<p><b>Freqüência:</b> Quanto mais cedo uma modificação puder ser integrada ao projeto principal e testada, mais cedo
+			<p class="postagem"><b>Freqüência:</b> Quanto mais cedo uma modificação puder ser integrada ao projeto principal e testada, mais cedo
 			os erros serão detectados e corrigidos. A freqüência em que as tarefas de integração serão realizadas, sem
 			dúvida, vão depender do software que estiver sendo desenvolvido.</p>
-			<p><b>Sincronização:</b> A sincronização das modificações frequente e contínua serve como um termômetro para identificar
+			<p class="postagem"><b>Sincronização:</b> A sincronização das modificações frequente e contínua serve como um termômetro para identificar
 			a qualidade dos esforços da equipe de desenvolvimento.</p>
-			<p><b>Automação:</b> Entre outros benefícios, a Integração Contínua fornece um meio de automatizar processos manuais e 
+			<p class="postagem"><b>Automação:</b> Entre outros benefícios, a Integração Contínua fornece um meio de automatizar processos manuais e 
 			repetitivos, evitando que os processos sejam esquecidos ou que algum passo importante não seja executado. Assim,
 			você poderá realmente ter confiança de que essas tarefas serão realizadas com precisão e consistência todas as 
 			vezes que for preciso.</p> 
-			<p><b>Simplicidade:</b> Uma vez que todo o processo seja automatizado, qualquer operação poderá ser realizada por meio de
-			um clique do mouse. </p></h4>
+			<p class="postagem"><b>Simplicidade:</b> Uma vez que todo o processo seja automatizado, qualquer operação poderá ser realizada por meio de
+			um clique do mouse. </p>
 			<h3 class="postagem">Ferramentas de Integração Contínua</h3>
-			<h4 class="postagem"><p>Existem várias ferramentas de integração contínua, decidir qual usar será uma questão de conhecer bem 
+			<p class="postagem">Existem várias ferramentas de integração contínua, decidir qual usar será uma questão de conhecer bem 
 			o projeto,assim como também as necessidades que este vai precisar. Entre as ferramentas temos:</p>
-			<p><b>Apache Continuum</p></b>
-			<p>Desenvolvida pela Apache, ele roda em qualquer Servlet Container. Ele baixa o código alterado do controle de versão,
+			<p class="postagem"><b>Apache Continuum</b></p>
+			<p class="postagem">Desenvolvida pela Apache, ele roda em qualquer Servlet Container. Ele baixa o código alterado do controle de versão,
 			roda o build, distribui no servidor de aplicação e roda os testes unitários. Se o build quebrar, manda e-mail para quem
 			quebrou o build e para quem estiver interessado no processo. A interface dele não é uma das melhores, porém a configuração
 			inicial é simples, basta apontar para o seu pom.xml. e ele faz o resto. Mais se não usar o Maven dará problema no projeto.</p>
-			<p>Para saber mais e baixar acesse <a href="https://continuum.apache.org/" target="_blank"> Apache Continuum </a></p>
+			<p class="postagem">Para saber mais e baixar acesse <a href="https://continuum.apache.org/" target="_blank"> Apache Continuum </a></p>
 			<p><b>CruiseControl.rb</b></p>
-			<p>Este si entrega com todos os providers de controle de versão, no entanto ele é espacialmente moldado para trabalhar com o
+			<p class="postagem">Este si entrega com todos os providers de controle de versão, no entanto ele é espacialmente moldado para trabalhar com o
 			Git. Se você trabalha com SVN e CVS, funciona, porém a configuração não é das melhores. Além disso dá um trabalho colocar
 			ele para rodar, por causa de sua dependência do Ruby. Ou seja, se o seu projeto não é Ruby não há nenhuma necessidade instala-lo.</p>
 
-			</h4>
 			<hr> 
 			<h6 class="data">Por Antonia Jocerlania</h6>
 			<hr>
@@ -103,8 +102,8 @@
 		<div class="pagination pagination-centered">
 		    <li class="disabled"><a href="#">Prev</a></li>
 			<li><a href="../index.html">1</a></li>
-			<li><a href="integraçãocontinua.html">2</a></li>
-			<li class="active"><a href="condemudanças.html">3</a></li>
+			<li class="active"><a href="integraçãocontinua.html">2</a></li>
+			<li><a href="gerendemudanças.html">3</a></li>
 			<li><a href="condeversão.html">4</a></li>
 			<li class="disabled"><a href="#">Next</a></li>
 <		</div>
@@ -113,7 +112,7 @@
 	<hr>
     <footer >
 	<div class="panel panel-default">
-	  <div class="panel-footer"><center><h6>Copyright © 2016-Desenvolvido por ANKA.Tech</h6></center></div>
+	  <div class="panel-footer"><center><h6> ©Copyright 2016-Desenvolvido por ANKA.Tech</h6></center></div>
 	</div>
 			
 			
