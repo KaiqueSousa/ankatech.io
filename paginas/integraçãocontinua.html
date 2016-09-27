@@ -27,11 +27,6 @@
 	 </ul>
 	<div class="tudo">
 		<nav class="busca">
-			<form class="form-search">
-				  <input type="text" class="input-medium search-query">
-				  <button type="submit" class="btn">Busca</button>
-			</form>
-			<hr>
 			<ul class="nav nav-list">
 			  <li class="nav-header"><center><h3 class="menulateral">Conteúdo</h3></center></li>
 			  <li><a href="../index.html">Introdução</a></li>
@@ -80,12 +75,19 @@
 			<p class="postagem">Existem várias ferramentas de integração contínua, decidir qual usar será uma questão de conhecer bem 
 			o projeto,assim como também as necessidades que este vai precisar. Entre as ferramentas temos:</p>
 			<p class="postagem"><b>Apache Continuum</b></p>
+			<center>
+			<img class="divfundo" src="../img/Apache.png" width="400px" height="200px">
+			</center>
 			<p class="postagem">Desenvolvida pela Apache, ele roda em qualquer Servlet Container. Ele baixa o código alterado do controle de versão,
 			roda o build, distribui no servidor de aplicação e roda os testes unitários. Se o build quebrar, manda e-mail para quem
 			quebrou o build e para quem estiver interessado no processo. A interface dele não é uma das melhores, porém a configuração
 			inicial é simples, basta apontar para o seu pom.xml. e ele faz o resto. Mais se não usar o Maven dará problema no projeto.</p>
 			<p class="postagem">Para saber mais e baixar acesse <a href="https://continuum.apache.org/" target="_blank"> Apache Continuum </a></p>
 			<p class="postagem"><b>CruiseControl.rb</b></p>
+			<center>
+			<img class="divfundo" src="../img/cruisecontrol.png" width="400px" height="200px">
+			
+			</center>
 			<p class="postagem">Este si entrega com todos os providers de controle de versão, no entanto ele é espacialmente moldado para trabalhar com o
 			Git. Se você trabalha com SVN e CVS, funciona, porém a configuração não é das melhores. Além disso dá um trabalho colocar
 			ele para rodar, por causa de sua dependência do Ruby. Ou seja, se o seu projeto não é Ruby não há nenhuma necessidade instala-lo.</p>
